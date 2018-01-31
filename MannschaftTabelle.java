@@ -11,44 +11,41 @@ public class MannschaftTabelle {
             Scanner scanner = new Scanner(System.in);
 
 
-            System.out.print("Sage dein Spiel  ");
+            System.out.print("Sage dein Spiel  ");          //schreibe "Sage dein Spiel"
 
 
-            String Spiel = scanner.nextLine();
+            String Spiel = scanner.nextLine();                      //lese Eingabe , also das Spiel
 
-            System.out.println("| Spiel: " + Spiel + " |");
-
-
-            System.out.print("Sage die Tore der Heimmannschaft: ");
+            System.out.println("| Spiel: " + Spiel + " |");         //Gebe das geschrieben Spiel aus
 
 
-            String ToreHeimmannschaften = scanner.nextLine();
-
-            System.out.println("|Tore Heimmannschaft: " + ToreHeimmannschaften + " |");
-
-            System.out.print("Sage die Tore der Gastmannschaft: ");
-
-            String ToreGastmannschaft = scanner.nextLine();
-
-            System.out.println("Tore Gastmannschaft: " + ToreGastmannschaft + " |");
-
-            System.out.println(String.format("! Es steht %s zu %s !", ToreHeimmannschaften, ToreGastmannschaft));
-
-            System.out.print("Gibt es noch mehr Spiele, die du in deinen Kader rein machen willst?");
-
-            String Ja = scanner.next();
+            System.out.print("Sage die Tore der Heimmannschaft: ");      //schreibe "Sage die Tore der Heimmannschaft: "
 
 
-            ArrayList liste = new ArrayList();
+            String ToreHeimmannschaften = scanner.nextLine();               //lese Eingabe, also die Tore der Heimmannschaft
 
-            liste.add("Deutschland");
-            liste.add("Polen");
-            liste.add("Frankreich");
-            liste.add("Real Madrid");
-            liste.add("Barcelona");
+            System.out.println("|Tore Heimmannschaft: " + ToreHeimmannschaften + " |");     //Gebe Tore der Heimmannschaft aus
+
+            System.out.print("Sage die Tore der Gastmannschaft: ");                //schreibe "Sage die Tore der Gastmannschaft: "
+
+            String ToreGastmannschaft = scanner.nextLine();                    //lese die Tore der Gastmannschaft
+
+            System.out.println("Tore Gastmannschaft: " + ToreGastmannschaft + " |");              //Gebe die Tore der Gastmannschaft aus
+
+            System.out.println(String.format("! Es steht %s zu %s !", ToreHeimmannschaften, ToreGastmannschaft));     //Gebe mit den gelesenen Tor-Variablen den pielstand aus
+
+            System.out.print("Gibt es noch mehr Spiele, die du in deinen Kader rein machen willst?");                  //Frage nach einer weiteren Eingabe eines Spiels
+
+            String Ja = scanner.next();                        //lese Eingabe
 
 
-            System.out.println(liste);
+            ArrayList liste = new ArrayList();                     //erstelle eine ArrayList
+
+            liste.add(Spiel);                    //das bisher angegeben Spiel in die Liste hinzufügen
+
+
+
+            System.out.println(liste);                     //Liste mit dem angegeben Spiel ausgeben
         }
     }
 
