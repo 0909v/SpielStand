@@ -1,6 +1,6 @@
 import java.net.NetworkInterface;
 import java.util.Scanner;
-
+import java.util.ArrayList;
 
 public class MannschaftTabelle {
 
@@ -39,10 +39,21 @@ public class MannschaftTabelle {
             String Ja = scanner.next();
 
 
+            ArrayList liste = new ArrayList();
 
-            }
+            liste.add("Deutschland");
+            liste.add("Polen");
+            liste.add("Frankreich");
+            liste.add("Real Madrid");
+            liste.add("Barcelona");
+
+
+            System.out.println(liste);
         }
     }
+
+
+}
 
 
 
