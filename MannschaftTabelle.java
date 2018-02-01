@@ -34,23 +34,30 @@ public class MannschaftTabelle {
 
             System.out.println(String.format("! Es steht %s zu %s !", ToreHeimmannschaften, ToreGastmannschaft));     //Gebe mit den gelesenen Tor-Variablen den pielstand aus
 
-            System.out.print("Gibt es noch mehr Spiele, die du in deinen Kader rein machen willst?");                  //Frage nach einer weiteren Eingabe eines Spiels
-
-            String Ja = scanner.next();                        //lese Eingabe
-
-
             ArrayList liste = new ArrayList();                     //erstelle eine ArrayList
 
             liste.add(Spiel);                    //das bisher angegeben Spiel in die Liste hinzufügen
 
 
+                    String x = ToreGastmannschaft();
+                    String y = ToreHeimmannschaften();
+                    if ( y < x) {
+                   System.out.println("Die Gastmannschaft hat gewonnen!");
+                    }
+                    else if (x < y) {               // Wrong indentation
+                        System.out.println("Die Heimmannschaft hat gewonnen!");
+                    }
 
-            System.out.println(liste);                     //Liste mit dem angegeben Spiel ausgeben
+
+                System.out.println(liste);                     //Liste mit dem angegeben Spiel ausgeben
+            }
+
+
         }
+
+
     }
 
-
-}
 
 
 
